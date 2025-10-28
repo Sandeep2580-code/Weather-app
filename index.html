@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+
+        <div class="container">
+            <div class="header">
+                <h2>Weather</h2>
+                <div class="weather-input">
+                    <input type="text" name="city" id="city_input" placeholder="Enter city name">
+                    <button type="button" id="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>Search
+                    </button>
+                    <button type="button" id="locationBtn">
+                        <i class="bx bx-target-lock"></i>Current location
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="weather-data">
+            <div class="weather-left">
+                <div class="card">
+                    <div class="weather-current">
+                        <div class="details">
+                            <p>Now</p>
+                            <h2>___&deg;C</h2>
+                            <p>__</p>
+                        </div>
+                        <div class="weather-icon">
+                            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="class-foother">
+                        <p><i class='bx bx-calendar'></i>____</p>
+                        <p><i class='bx bx-current-location'></i>____</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+
+
+
+
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
