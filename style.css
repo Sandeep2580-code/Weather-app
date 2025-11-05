@@ -21,6 +21,9 @@ body{
     font-family: sans-serif;
     padding: 0 15px;
 }
+hr{
+    margin-bottom: 10px;
+}
 .header{
     position: sticky;
     top: 0;
@@ -79,7 +82,7 @@ body{
     gap: 12px;
     & .weather-left{
         grid-column: span 1;
-        & .current-weather{
+        & .weather-current{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -155,12 +158,24 @@ body{
         & .sunrise-sunset{
             display: grid;
             grid-template-columns: repeat(2,1fr);
+            & .item{
+                display: flex;
+                align-items: center;
+                gap: 10px   ;
+            }
         }
-        & .item{
+        & .card-item{
             display: flex;
-            align-items: center;
-            gap: 10px   ;
+            justify-content: space-between;
         }
     }
-}
+    & .hourly-forecast{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        column-gap: 10px;
+        & .card{
+            text-align: center;
+        }
+    }
+}   
 
